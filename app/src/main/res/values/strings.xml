@@ -5,4 +5,7 @@
     <string name="sample_website">Nova.Service</string>
     <string name="sample_totp">456464646</string>
     <string name="error_message">Error while loading data</string>
+    <string name="connected_devices_title">Connected Devices</string>
+    <string name="sample_phone_name">Honor P9</string>
+    <string name="sample_date">12.12.18</string>
 </resources>

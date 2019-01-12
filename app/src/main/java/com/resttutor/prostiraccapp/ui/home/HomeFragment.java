@@ -18,6 +18,7 @@ import com.resttutor.prostiraccapp.models.Account;
 import com.resttutor.prostiraccapp.models.Device;
 import com.resttutor.prostiraccapp.presentation.home.HomePresenter;
 import com.resttutor.prostiraccapp.presentation.home.HomeView;
+import com.resttutor.prostiraccapp.ui.device.ConnectedDevicesFragment;
 import com.resttutor.prostiraccapp.utils.OnItemClickListener;
 
 import java.util.List;
@@ -84,6 +85,9 @@ public class HomeFragment extends Fragment implements HomeView {
 
     @Override
     public void openDeviceFragment(List<Device> devices) {
-
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.frame_container, ConnectedDevicesFragment.newInstance(devices))
+                .addToBackStack(null)
+                .commit();
     }
 }

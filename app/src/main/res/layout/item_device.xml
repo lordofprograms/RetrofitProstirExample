@@ -20,40 +20,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/device_type_iv"
+                android:layout_width="@dimen/device_iv_size"
+                android:layout_height="@dimen/device_iv_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp20" />
+
             <TextView
                 android:id="@+id/device_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_16"
-                android:layout_marginTop="@dimen/margin_16"
-                android:text="@string/sample_totp"
+                android:layout_alignTop="@+id/device_type_iv"
+                android:layout_centerHorizontal="true"
+                android:text="@string/sample_phone_name"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/size_28" />
+                android:textSize="@dimen/size_20" />
 
             <TextView
-                android:id="@+id/date_tv"
+                android:id="@+id/device_date_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="@dimen/margin_16"
-                android:layout_marginBottom="@dimen/margin_16"
-                android:text="@string/sample_website"
+                android:layout_alignLeft="@+id/device_tv"
+                android:layout_below="@+id/device_tv"
+                android:text="@string/sample_date"
                 android:textColor="@color/colorTextSecondary"
                 android:textSize="@dimen/size_18" />
 
-           <!-- <ImageButton
-                android:id="@+id/btn_account_more"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignTop="@+id/tv_TOTP"
-                android:layout_margin="@dimen/margin_16"
-                android:background="@null"
-                android:contentDescription="@string/desciption_content_btn_homescreen_more"
-                android:gravity="center_vertical"
-                android:src="@drawable/ic_more_vert_black_24dp" />-->
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>

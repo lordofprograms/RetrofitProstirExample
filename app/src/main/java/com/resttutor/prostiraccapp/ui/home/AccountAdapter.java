@@ -55,8 +55,8 @@ public class AccountAdapter  extends RecyclerView.Adapter<AccountAdapter.Account
         AccountViewHolder(@NonNull View itemView) {
             super(itemView);
             this.cardView = itemView.findViewById(R.id.card_view_acc);
-            this.totpTv = itemView.findViewById(R.id.tv_TOTP);
-            this.serviceTv = itemView.findViewById(R.id.tv_service);
+            this.totpTv = itemView.findViewById(R.id.device_tv);
+            this.serviceTv = itemView.findViewById(R.id.date_tv);
         }
 
         void bind(int position, Account account) {
